@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function checkStrength(password) {
+            if (password.length > 15)
+                return "Strong"
+            else if (password.length >= 8)
+                return "Moderate"
+
+            return "Weak"
+
+        }
+        // let a = 12
+        // let b = 34
+        // let c = a + b
+        // console.log(c);
+        // alert("Welcome to my page")
+        // alert("we're awesome")
+        // console.log("This is lovely and cool")
+        // let userInput = prompt()
+        let userInput = prompt("What is your password?")
+        let result = checkStrength(userInput)
+        // console.log(result)
+        alert("Your password is " + result)
+        // console.log("User said ", userInput)
+
+    </script>
+</body>
+
+</html>
